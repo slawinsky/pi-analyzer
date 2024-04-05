@@ -1,0 +1,35 @@
+.login,
+.login__form {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__title {
+  font-size: 2em;
+  margin: 0 0 1em 0;
+}
+
+.login__input,
+.login__submit {
+  height: 35px;
+  border-radius: 10px;
+  box-shadow: 0 0 1px rgb(0 0 0 / 0.2);
+  border: none;
+  width: 100%;
+}
+
+.login__input {
+  margin: 0 0 1em 0;
+  padding: 0 1em;
+}
+
+.login__submit {
+  background-color: #06b57d;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}

@@ -1,13 +1,12 @@
-import "./App.css";
+import React from "react";
+import Login from "./components/Login/Login";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello world!</h1>
-      </header>
-    </div>
+    <>
+      <Login />
+    </>
   );
-}
+};
 
 export default App;
