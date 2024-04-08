@@ -8,12 +8,12 @@ import java.time.ZonedDateTime;
 @Document
 public class User {
     @Id
-    private int id;
+    private String id;
     private String username;
     private String password;
     private ZonedDateTime lastLogin;
 
-    public User(int id, String username, String password, ZonedDateTime lastLogin) {
+    public User(String id, String username, String password, ZonedDateTime lastLogin) {
         this.username = username;
         this.password = password;
         this.lastLogin = lastLogin;
