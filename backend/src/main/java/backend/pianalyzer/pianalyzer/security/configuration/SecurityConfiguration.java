@@ -1,4 +1,4 @@
-package backend.pianalyzer.pianalyzer.Security.Configuration;
+package backend.pianalyzer.pianalyzer.security.configuration;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -23,7 +23,9 @@ public class SecurityConfiguration {
         return http
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(req -> req
-                        .requestMatchers("/api/v1/auth/authenticate").permitAll()
+                        .requestMatchers("/api/v1/authenticate").permitAll()
+                        .requestMatchers("/api/v1/test").permitAll()
+                        .requestMatchers("/api/v1/register").permitAll()
                         .anyRequest().authenticated()
                 )
                 .sessionManagement(sess -> sess

@@ -1,6 +1,6 @@
-package backend.pianalyzer.pianalyzer.Repositories;
+package backend.pianalyzer.pianalyzer.repositories;
 
-import backend.pianalyzer.pianalyzer.Models.User;
+import backend.pianalyzer.pianalyzer.models.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

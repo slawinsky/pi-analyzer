@@ -1,9 +1,6 @@
-package backend.pianalyzer.pianalyzer.Models;
+package backend.pianalyzer.pianalyzer.models;
 import com.mongodb.lang.Nullable;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.security.core.GrantedAuthority;
@@ -13,7 +10,8 @@ import java.time.ZonedDateTime;
 import java.util.Collection;
 
 @Builder
-@Data
+@Getter
+@Setter
 @Document("users")
 @AllArgsConstructor
 @NoArgsConstructor
@@ -28,18 +26,6 @@ public class User implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return null;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public ZonedDateTime getLastLogin() {
-        return lastLogin;
     }
 
     @Override

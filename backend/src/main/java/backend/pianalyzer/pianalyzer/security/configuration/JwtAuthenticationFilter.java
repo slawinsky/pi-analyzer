@@ -1,6 +1,6 @@
-package backend.pianalyzer.pianalyzer.Security.Configuration;
+package backend.pianalyzer.pianalyzer.security.configuration;
 
-import backend.pianalyzer.pianalyzer.Security.Services.JwtService;
+import backend.pianalyzer.pianalyzer.security.services.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -18,7 +18,7 @@ import java.io.IOException;
 
 @Component
 @RequiredArgsConstructor
-public class JwtAuthenticationFilter extends OncePerRequestFilter {
+class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     private final JwtService jwtService;
     private final UserDetailsService userDetailsService;

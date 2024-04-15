@@ -1,4 +1,4 @@
-package backend.pianalyzer.pianalyzer.Security.Services;
+package backend.pianalyzer.pianalyzer.security.services;
 
 import io.github.cdimascio.dotenv.Dotenv;
 import io.jsonwebtoken.Claims;
