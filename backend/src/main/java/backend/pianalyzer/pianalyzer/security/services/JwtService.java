@@ -1,5 +1,6 @@
 package backend.pianalyzer.pianalyzer.security.services;
 
+import backend.pianalyzer.pianalyzer.environment.Environment;
 import io.github.cdimascio.dotenv.Dotenv;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -18,9 +19,7 @@ import java.util.function.Function;
 @Service
 public class JwtService {
 
-    private static final Dotenv dotenv = Dotenv.load();
-
-    private static final String SECRET = dotenv.get("SECRET_KEY");
+    private static final String SECRET = Environment.JWT_KEY;
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
     }
