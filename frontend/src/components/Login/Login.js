@@ -29,7 +29,7 @@ const Login = () => {
   };
 
   if (loggedIn) {
-    return <Navigate to="/home" />;
+    return <Navigate to="/home/dashboard" />;
   }
 
   return (
