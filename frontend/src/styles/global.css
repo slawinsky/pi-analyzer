@@ -34,3 +34,8 @@ code {
   font-smooth: 5em;
   text-shadow: 0 0 1px rgb(0 0 0 / 0.2);
 }
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
