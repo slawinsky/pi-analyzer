@@ -1,0 +1,78 @@
+.hosts {
+  height: 85%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 1px rgb(0 0 0 / 0.2);
+}
+
+.hosts * {
+  margin: 1em 0 0 1em;
+}
+
+.hosts__title {
+  text-align: left;
+}
+
+.hosts__table {
+  flex-grow: 2;
+  margin: 1em 0 0 2em;
+  border-collapse: collapse;
+}
+
+.hosts__table td {
+  color: #505050;
+  font-weight: 600;
+}
+
+.hosts__table th {
+  text-align: left;
+}
+
+.hosts__table tr {
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.hosts__table tr:last-child {
+  border: none;
+}
+
+.hosts__btn {
+  border: none;
+  background: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.block {
+  color: #c73131;
+  margin: 0 1em 0 0;
+}
+
+.view {
+  width: fit-content;
+  color: #06b57d;
+  margin: 0 0 2em 2.5em;
+}
+
+@media screen and (max-width: 965px) {
+  .name {
+    display: none;
+  }
+
+  .time {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .name {
+    display: none;
+  }
+
+  .time {
+    display: none;
+  }
+}
