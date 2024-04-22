@@ -40,3 +40,12 @@ h1 {
   font-size: 2em;
   text-align: center;
 }
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em 2em;
+}
