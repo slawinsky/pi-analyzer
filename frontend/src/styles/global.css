@@ -17,6 +17,7 @@ body,
   justify-content: center;
   align-items: center;
   background-color: #eff0f2;
+  overflow-x: auto;
 }
 
 body {
