@@ -70,3 +70,17 @@
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  .dashboard__up,
+  .dashboard__bottom {
+    flex-direction: column;
+  }
+
+  .dashboard__threats,
+  .dashboard__traffic,
+  .dashboard__ips,
+  .dashboard__hosts {
+    height: 360px;
+  }
+}
