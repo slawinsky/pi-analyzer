@@ -1,0 +1,108 @@
+.monitoring__up,
+.monitoring__bottom {
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+
+.monitoring__notifications,
+.monitoring__traffic,
+.monitoring__ips,
+.monitoring__threats {
+  background-color: #fff;
+  margin: 1em;
+  border-radius: 4px;
+  box-shadow: 0 0 1px rgb(0 0 0 / 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.monitoring__traffic,
+.monitoring__ips {
+  flex-grow: 5;
+  justify-content: center;
+}
+
+.monitoring__threats,
+.monitoring__notifications {
+  flex-grow: 2;
+  align-items: center;
+}
+
+.monitoring__title {
+  font-size: 1.5em;
+  margin: 1em 0 0 0;
+}
+
+.left__title {
+  text-align: left;
+  margin-left: 1em;
+}
+
+.monitoring__chart,
+.monitoring__list {
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.monitoring__form {
+  display: flex;
+  justify-content: center;
+  flex-grow: 2;
+  flex-direction: column;
+  margin: 1em 0 0 0;
+}
+
+.monitoring__input,
+.monitoring__submit {
+  height: 35px;
+  border-radius: 10px;
+  background-color: #eff0f2;
+  box-shadow: 0 0 1px rgb(0 0 0 / 0.2);
+  border: none;
+  width: 100%;
+}
+
+.monitoring__input {
+  margin: 0 0 1em 0;
+  padding: 0 1em;
+}
+
+.monitoring__submit {
+  background-color: #06b57d;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.monitoring__list {
+  flex-direction: column;
+}
+
+.monitoring__threat {
+  list-style-type: none;
+  font-weight: 700;
+  color: #c73131;
+  padding: 1em 0;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+@media screen and (max-width: 768px) {
+  .monitoring {
+    min-height: 1600px;
+  }
+
+  .monitoring__up,
+  .monitoring__bottom {
+    flex-direction: column;
+  }
+
+  .monitoring__threats,
+  .monitoring__traffic,
+  .monitoring__ips {
+    min-height: 360px;
+  }
+}
