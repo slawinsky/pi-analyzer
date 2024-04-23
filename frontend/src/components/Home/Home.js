@@ -4,6 +4,7 @@ import Dashboard from "../Dashoard/Dashboard";
 import Menu from "../Menu/Menu";
 import Hosts from "../Hosts/Hosts";
 import Monitoring from "../Monitoring/Monitoring";
+import Firewall from "../Firewall/Firewall";
 import "./Home.css";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="hosts" element={<Hosts />} />
         <Route path="monitoring" element={<Monitoring />} />
+        <Route path="firewall" element={<Firewall />} />
       </Routes>
     </div>
   );

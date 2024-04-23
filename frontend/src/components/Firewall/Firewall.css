@@ -1,0 +1,74 @@
+.firewall {
+  height: 85%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 1px rgb(0 0 0 / 0.2);
+}
+
+.firewall * {
+  margin: 1em 0 0 1em;
+}
+
+.firewall__title {
+  text-align: left;
+}
+
+.firewall__table {
+  margin: 1em 0 0 2em;
+  border-collapse: collapse;
+}
+
+.firewall__table td {
+  color: #505050;
+  font-weight: 600;
+  padding: 1em 0;
+}
+
+.firewall__table th {
+  padding: 1em 0;
+  text-align: left;
+}
+
+.firewall__table tr {
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.firewall__table tr:last-child {
+  border: none;
+}
+
+.firewall__btn {
+  border: none;
+  background: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.delete {
+  color: #c73131;
+  margin: 0 1em 0 0;
+}
+
+.blocked {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .firewall {
+    display: none;
+  }
+
+  .blocked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blocked .firewall__title {
+    text-align: center;
+    color: #c73131;
+  }
+}
