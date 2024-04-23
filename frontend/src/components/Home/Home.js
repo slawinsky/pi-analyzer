@@ -5,6 +5,7 @@ import Menu from "../Menu/Menu";
 import Hosts from "../Hosts/Hosts";
 import Monitoring from "../Monitoring/Monitoring";
 import Firewall from "../Firewall/Firewall";
+import Users from "../Users/Users";
 import "./Home.css";
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
         <Route path="hosts" element={<Hosts />} />
         <Route path="monitoring" element={<Monitoring />} />
         <Route path="firewall" element={<Firewall />} />
+        <Route path="users" element={<Users />} />
       </Routes>
     </div>
   );
