@@ -6,6 +6,7 @@ import Hosts from "../Hosts/Hosts";
 import Monitoring from "../Monitoring/Monitoring";
 import Firewall from "../Firewall/Firewall";
 import Users from "../Users/Users";
+import User from "../User/User";
 import "./Home.css";
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
         <Route path="monitoring" element={<Monitoring />} />
         <Route path="firewall" element={<Firewall />} />
         <Route path="users" element={<Users />} />
+        <Route path="profile" element={<User />} />
       </Routes>
     </div>
   );
