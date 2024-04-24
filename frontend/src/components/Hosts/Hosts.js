@@ -4,8 +4,8 @@ import "./Hosts.css";
 const Hosts = () => {
   return (
     <div className="content">
-      <div className="hosts">
-        <h1 className="hosts__title">Hosts</h1>
+      <div className="hosts tile">
+        <h1 className="hosts__title left__title">Hosts</h1>
         <table className="hosts__table">
           <tr>
             <th className="hosts__heading ip">IP ADDRESS</th>
@@ -19,7 +19,7 @@ const Hosts = () => {
             <td className="name">POCO X3 PRO</td>
             <td className="time">02:34:50</td>
             <td>
-              <button className="hosts__btn block">block</button>
+              <button className="hosts__btn btn-red block">block</button>
             </td>
           </tr>
           <tr>
@@ -28,7 +28,7 @@ const Hosts = () => {
             <td className="name">POCO X3 PRO</td>
             <td className="time">02:34:50</td>
             <td>
-              <button className="hosts__btn block">block</button>
+              <button className="hosts__btn btn-red block">block</button>
             </td>
           </tr>
           <tr>
@@ -37,11 +37,13 @@ const Hosts = () => {
             <td className="name">POCO X3 PRO</td>
             <td className="time">02:34:50</td>
             <td>
-              <button className="hosts__btn block">block</button>
+              <button className="hosts__btn btn-red block">block</button>
             </td>
           </tr>
         </table>
-        <button className="hosts__btn view">View blocked hosts {">>"}</button>
+        <button className="hosts__btn btn-green view">
+          View blocked hosts {">>"}
+        </button>
       </div>
     </div>
   );

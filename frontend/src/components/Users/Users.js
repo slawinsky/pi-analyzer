@@ -4,7 +4,7 @@ import "./Users.css";
 const Users = () => {
   return (
     <div className="content">
-      <div className="users">
+      <div className="users tile">
         <h1 className="users__title">Users</h1>
         <table className="users__table">
           <tr>

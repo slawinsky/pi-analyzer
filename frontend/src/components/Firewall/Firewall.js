@@ -4,7 +4,7 @@ import "./Firewall.css";
 const Firewall = () => {
   return (
     <div className="content">
-      <div className="firewall">
+      <div className="firewall tile">
         <h1 className="firewall__title">Firewall</h1>
         <table className="firewall__table">
           <tr>
@@ -17,7 +17,7 @@ const Firewall = () => {
             <td>8.8.8.8</td>
             <td>FORWARD</td>
             <td>
-              <button className="firewall__btn delete">delete</button>
+              <button className="firewall__btn btn-red delete">delete</button>
             </td>
           </tr>
         </table>

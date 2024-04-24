@@ -1,11 +1,6 @@
 .users {
   height: 85%;
   width: 100%;
-  background-color: #fff;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0 1px rgb(0 0 0 / 0.2);
 }
 
 .users * {
@@ -50,7 +45,4 @@
 .delete {
   color: #c73131;
   margin: 0 1em 0 0;
-}
-
-@media screen and (max-width: 768px) {
 }

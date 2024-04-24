@@ -5,38 +5,14 @@
   height: 50%;
 }
 
-.monitoring__notifications,
-.monitoring__traffic,
-.monitoring__ips,
-.monitoring__threats {
-  background-color: #fff;
-  margin: 1em;
-  border-radius: 4px;
-  box-shadow: 0 0 1px rgb(0 0 0 / 0.2);
-  display: flex;
-  flex-direction: column;
-}
-
 .monitoring__traffic,
 .monitoring__ips {
-  flex-grow: 5;
   justify-content: center;
-}
-
-.monitoring__threats,
-.monitoring__notifications {
-  flex-grow: 2;
-  align-items: center;
 }
 
 .monitoring__title {
   font-size: 1.5em;
   margin: 1em 0 0 0;
-}
-
-.left__title {
-  text-align: left;
-  margin-left: 1em;
 }
 
 .monitoring__chart,

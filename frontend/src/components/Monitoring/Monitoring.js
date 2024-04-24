@@ -5,7 +5,7 @@ const Monitoring = () => {
   return (
     <div className="monitoring content">
       <div className="monitoring__up">
-        <div className="monitoring__notifications">
+        <div className="monitoring__notifications tile tile-thin">
           <h1 className="monitoring__title">Mail notification</h1>
           <form className="monitoring__form">
             <input
@@ -35,17 +35,17 @@ const Monitoring = () => {
             />
           </form>
         </div>
-        <div className="monitoring__traffic">
+        <div className="monitoring__traffic tile tile-wide">
           <h1 className="monitoring__title left__title">Traffic</h1>
           <span className="monitoring__chart">chart</span>
         </div>
       </div>
       <div className="monitoring__bottom">
-        <div className="monitoring__ips">
+        <div className="monitoring__ips tile tile-wide">
           <h1 className="monitoring__title left__title">Common Ip's</h1>
           <div className="monitoring__chart">chart</div>
         </div>
-        <div className="monitoring__threats">
+        <div className="monitoring__threats tile tile-thin">
           <h1 className="monitoring__title">Threats</h1>
           <ul className="monitoring__list">
             <li className="monitoring__threat">192.168.33.55</li>

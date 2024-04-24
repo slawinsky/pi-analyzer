@@ -1,13 +1,8 @@
 .user {
   height: 85%;
   width: 100%;
-  background-color: #fff;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 1px rgb(0 0 0 / 0.2);
 }
 
 .users__btn {
@@ -16,11 +11,4 @@
 
 .user__image {
   width: 85px;
-}
-
-.logout {
-  color: #c73131;
-}
-
-@media screen and (max-width: 768px) {
 }

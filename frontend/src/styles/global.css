@@ -50,3 +50,39 @@ h1 {
   flex-direction: column;
   padding: 1em 2em;
 }
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 1em;
+  border-radius: 4px;
+  box-shadow: 0 0 1px rgb(0 0 0 / 0.2);
+}
+
+.tile-thin {
+  flex-grow: 2;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tile-wide {
+  flex-grow: 5;
+}
+
+.dashboard__title {
+  margin: 1em 0 0 0;
+}
+
+.left__title {
+  text-align: left;
+  margin-left: 1em;
+}
+
+.btn-red {
+  color: #c73131;
+}
+
+.btn-green {
+  color: #06b57d;
+}
