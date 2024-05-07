@@ -13,6 +13,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Ip {
     @Id
     private String id;
-    private String ipv4;
+    private String ip;
     private boolean isDanger;
 }
