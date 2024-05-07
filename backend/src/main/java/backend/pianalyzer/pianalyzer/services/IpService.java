@@ -8,4 +8,8 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class IpService {
     private final IpRepository ipRepository;
+
+    public String getThreatsNumber() {
+        return ipRepository.countAllByIsDangerIsTrue();
+    }
 }
