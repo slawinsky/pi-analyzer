@@ -4,6 +4,8 @@ import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.ZonedDateTime;
+
 @Builder
 @Getter
 @Setter
@@ -15,5 +17,6 @@ public class Host {
     private String id;
     private String mac;
     private String name;
+    private ZonedDateTime connected;
     private boolean isBlocked;
 }
