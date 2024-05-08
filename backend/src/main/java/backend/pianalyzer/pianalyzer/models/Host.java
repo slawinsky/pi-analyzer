@@ -17,6 +17,7 @@ public class Host {
     private String id;
     private String mac;
     private String name;
-    private ZonedDateTime connected;
+    private ZonedDateTime lastConnected;
     private boolean isBlocked;
+    private boolean isConnected;
 }
