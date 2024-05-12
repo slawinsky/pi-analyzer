@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -15,8 +16,13 @@ import java.util.Optional;
 public class HostController {
     private final HostService hostService;
 
-    @GetMapping("/hosts")
-    public ResponseEntity<Optional<Integer>> getConnectedHosts() {
+    @GetMapping("/hosts/count")
+    public ResponseEntity<Optional<Integer>> getConnectedHostsCount() {
         return ResponseEntity.ok(hostService.countAllByIsConnectedTrue());
+    }
+
+    @GetMapping("/hosts/list")
+    public ResponseEntity<Optional<List<String>>> getConnectedHosts() {
+        return ResponseEntity.ok(hostService.getAllByIsConnectedTrue());
     }
 }
