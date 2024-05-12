@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 const API_URL = process.env.REACT_APP_BACKEND_URL;
 
 axios.defaults.baseURL = API_URL;
-axios.defaults.headers.post["Content-Type"] = "application/json";
+axios.defaults.headers["Content-Type"] = "application/json";
 
 export const setAuthToken = (token) => {
   Cookies.set("token", token, { secure: true });
@@ -19,9 +19,6 @@ export const request = (method, endpoint, data) => {
 
   if (getAuthToken() !== undefined && getAuthToken() !== "undefined") {
     headers = { Authorization: "Bearer " + getAuthToken() };
-
-    const auth = getAuthToken();
-    console.log(getAuthToken(auth));
   }
 
   return axios({
