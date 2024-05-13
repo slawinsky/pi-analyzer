@@ -6,8 +6,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.time.ZonedDateTime;
 import java.util.Collection;
+import java.util.Date;
 
 @Builder
 @Getter
@@ -21,7 +21,7 @@ public class User implements UserDetails {
     private String username;
     private String password;
     @Nullable
-    private ZonedDateTime lastLogin;
+    private Date lastLogin;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
