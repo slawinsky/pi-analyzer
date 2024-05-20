@@ -14,5 +14,6 @@ public class Ip {
     @Id
     private String id;
     private String ip;
+    private Integer hits;
     private boolean isDanger;
 }

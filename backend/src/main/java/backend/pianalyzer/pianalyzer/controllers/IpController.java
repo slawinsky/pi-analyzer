@@ -1,5 +1,6 @@
 package backend.pianalyzer.pianalyzer.controllers;
 
+import backend.pianalyzer.pianalyzer.DTOs.responses.FrequentIpsResponse;
 import backend.pianalyzer.pianalyzer.services.IpService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -24,5 +25,10 @@ public class IpController {
     @GetMapping("/threats/ip")
     public ResponseEntity<Optional<List<String>>> getDangerIps() {
         return ResponseEntity.ok(ipService.getThreatsIps());
+    }
+
+    @GetMapping("/ip/hits")
+    public ResponseEntity<List<FrequentIpsResponse>> getFrequentIps() {
+        return ResponseEntity.ok(ipService.getFrequentIps());
     }
 }
