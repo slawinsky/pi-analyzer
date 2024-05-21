@@ -1,5 +1,6 @@
 import axios from "axios";
 import Cookies from "js-cookie";
+import { jwtDecode } from "jwt-decode";
 
 const API_URL = process.env.REACT_APP_BACKEND_URL;
 
@@ -12,6 +13,16 @@ export const setAuthToken = (token) => {
 
 export const getAuthToken = () => {
   return Cookies.get("token");
+};
+
+export const getUsername = () => {
+  if (getAuthToken() !== undefined && getAuthToken() !== "undefined") {
+    return jwtDecode(getAuthToken()).sub;
+  }
+};
+
+export const removeToken = () => {
+  Cookies.remove("token");
 };
 
 export const request = (method, endpoint, data) => {

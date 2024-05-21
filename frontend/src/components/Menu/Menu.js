@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import "./Menu.css";
 import { Link, NavLink } from "react-router-dom";
+import { getUsername } from "../../api/api-client";
 import UserIcon from "../../icons/user.svg";
 import Hamburger from "../Hamburger/Hamburger";
+import "./Menu.css";
 
 const Menu = () => {
   const [isOpen, setOpen] = useState(false);
@@ -74,7 +75,7 @@ const Menu = () => {
                 setOpen(!isOpen);
               }}
             >
-              Admin
+              {getUsername()}
             </Link>
           </h3>
         </div>
