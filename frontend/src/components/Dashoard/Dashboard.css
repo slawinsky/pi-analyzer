@@ -32,6 +32,11 @@
   align-items: center;
 }
 
+.chart__wrapper {
+  width: 70%;
+  height: 80%;
+}
+
 @media screen and (max-width: 768px) {
   .dashboard {
     min-height: 1600px;
