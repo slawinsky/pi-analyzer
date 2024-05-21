@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import Dashboard from "../Dashoard/Dashboard";
 import Menu from "../Menu/Menu";
 import Hosts from "../Hosts/Hosts";
@@ -20,6 +20,7 @@ const Home = () => {
         <Route path="firewall" element={<Firewall />} />
         <Route path="users" element={<Users />} />
         <Route path="profile" element={<User />} />
+        <Route path="*" element={<Navigate to="/not-found" replace />} />
       </Routes>
     </div>
   );

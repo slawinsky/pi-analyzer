@@ -1,7 +1,6 @@
 import React from "react";
 import UserIcon from "../../icons/user.svg";
 import { getUsername, removeToken } from "../../api/api-client";
-import { Navigate } from "react-router-dom";
 import "./User.css";
 
 const User = () => {
