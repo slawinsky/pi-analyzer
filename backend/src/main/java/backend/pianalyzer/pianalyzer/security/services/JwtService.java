@@ -1,7 +1,6 @@
 package backend.pianalyzer.pianalyzer.security.services;
 
 import backend.pianalyzer.pianalyzer.environment.Environment;
-import io.github.cdimascio.dotenv.Dotenv;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
