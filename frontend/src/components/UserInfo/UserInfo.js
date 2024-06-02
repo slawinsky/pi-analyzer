@@ -65,7 +65,7 @@ const UserInfo = ({ username, lastLogin }) => {
       alert("You cannot delete your own account!");
     }
 
-    await request("DELTE", `/user/${username}`)
+    await request("DELETE", `/user/${username}`)
       .then(() => {
         alert("User deleted!");
         window.location = "/home/users";
