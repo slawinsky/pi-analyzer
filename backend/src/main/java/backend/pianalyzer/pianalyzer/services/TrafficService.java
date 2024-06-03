@@ -5,8 +5,8 @@ import backend.pianalyzer.pianalyzer.repositories.TrafficRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -17,12 +17,9 @@ public class TrafficService {
         return trafficRepository.findHitsByProtocol(protocol);
     }
     public List<TrafficResponse> getProtocolInfo() {
-        List<TrafficResponse> protocols = new ArrayList<>();
-        trafficRepository.findAllBy().forEach((protocol) -> {
-            var p = TrafficResponse.builder().protocol(protocol.getProtocol()).hits(protocol.getHits()).build();
-            protocols.add(p);
-        });
-
-        return protocols;
+        return trafficRepository.findAllBy().stream().map(protocol -> TrafficResponse.builder()
+                .protocol(protocol.getProtocol())
+                .hits(protocol.getHits()).build()
+        ).collect(Collectors.toList());
     }
 }

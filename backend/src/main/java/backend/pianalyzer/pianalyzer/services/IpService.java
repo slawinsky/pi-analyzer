@@ -6,9 +6,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -24,13 +24,10 @@ public class IpService {
     }
 
     public List<FrequentIpsResponse> getFrequentIps() {
-        List<FrequentIpsResponse> frequentIps = new ArrayList<>();
-
-        ipRepository.findAllBy(Sort.by(Sort.Direction.DESC, "hits")).stream().limit(5).forEach(ip -> {
-            var i = FrequentIpsResponse.builder().ip(ip.getIp()).hits(ip.getHits()).build();
-            frequentIps.add(i);
-        });
-
-        return frequentIps;
+        return ipRepository.findAllBy(Sort.by(Sort.Direction.DESC, "hits")).stream().limit(5).map(ip -> FrequentIpsResponse.builder()
+                        .ip(ip.getIp())
+                        .hits(ip.getHits())
+                        .build()
+        ).collect(Collectors.toList());
     }
 }
