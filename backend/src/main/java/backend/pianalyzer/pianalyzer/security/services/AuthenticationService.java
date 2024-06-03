@@ -3,7 +3,7 @@ package backend.pianalyzer.pianalyzer.security.services;
 import backend.pianalyzer.pianalyzer.DTOs.requests.UserLoginRequest;
 import backend.pianalyzer.pianalyzer.DTOs.responses.AuthenticationResponse;
 import backend.pianalyzer.pianalyzer.repositories.UserRepository;
-import backend.pianalyzer.pianalyzer.utils.ZonedDateTimeWriteConverter;
+import backend.pianalyzer.pianalyzer.time.ZonedDateTimeWriteConverter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
