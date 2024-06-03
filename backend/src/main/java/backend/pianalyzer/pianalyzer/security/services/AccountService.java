@@ -1,8 +1,8 @@
 package backend.pianalyzer.pianalyzer.security.services;
 
-import backend.pianalyzer.pianalyzer.DTOs.requests.UserRegisterRequest;
-import backend.pianalyzer.pianalyzer.exceptions.UsernameExistException;
-import backend.pianalyzer.pianalyzer.models.User;
+import backend.pianalyzer.pianalyzer.DTO.request.UserRegisterRequest;
+import backend.pianalyzer.pianalyzer.exception.UsernameExistException;
+import backend.pianalyzer.pianalyzer.model.User;
 
 interface AccountService {
 

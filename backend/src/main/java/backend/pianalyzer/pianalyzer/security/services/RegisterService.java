@@ -1,9 +1,9 @@
 package backend.pianalyzer.pianalyzer.security.services;
 
-import backend.pianalyzer.pianalyzer.DTOs.requests.UserRegisterRequest;
-import backend.pianalyzer.pianalyzer.exceptions.UsernameExistException;
-import backend.pianalyzer.pianalyzer.models.User;
-import backend.pianalyzer.pianalyzer.repositories.UserRepository;
+import backend.pianalyzer.pianalyzer.DTO.request.UserRegisterRequest;
+import backend.pianalyzer.pianalyzer.exception.UsernameExistException;
+import backend.pianalyzer.pianalyzer.model.User;
+import backend.pianalyzer.pianalyzer.domains.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
