@@ -12,11 +12,11 @@ import java.util.Optional;
 public class HostService {
     private final HostRepository hostRepository;
 
-    public Optional<Integer> countAllByIsConnectedTrue() {
-        return hostRepository.countAllByIsConnectedTrue();
+    public Optional<Integer> countAllByConnected() {
+        return hostRepository.countAllByConnected();
     }
 
-    public Optional<List<String>> getAllByIsConnectedTrue() {
-        return hostRepository.getAllByIsConnectedTrue();
+    public Optional<List<String>> getAllByConnected() {
+        return hostRepository.getAllByConnected();
     }
 }

@@ -18,11 +18,11 @@ public class HostController {
 
     @GetMapping("/hosts/count")
     public ResponseEntity<Optional<Integer>> getConnectedHostsCount() {
-        return ResponseEntity.ok(hostService.countAllByIsConnectedTrue());
+        return ResponseEntity.ok(hostService.countAllByConnected());
     }
 
     @GetMapping("/hosts/list")
     public ResponseEntity<Optional<List<String>>> getConnectedHosts() {
-        return ResponseEntity.ok(hostService.getAllByIsConnectedTrue());
+        return ResponseEntity.ok(hostService.getAllByConnected());
     }
 }
