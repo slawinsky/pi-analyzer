@@ -8,7 +8,6 @@ import java.time.ZonedDateTime;
 
 @Builder
 @Getter
-@Setter
 @Document("hosts")
 @AllArgsConstructor
 @NoArgsConstructor

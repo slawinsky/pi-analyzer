@@ -11,8 +11,8 @@ import java.util.Date;
 
 @Builder
 @Getter
-@Setter
 @Document("users")
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class User implements UserDetails {
