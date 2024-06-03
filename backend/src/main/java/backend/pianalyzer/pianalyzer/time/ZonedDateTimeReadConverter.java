@@ -1,4 +1,4 @@
-package backend.pianalyzer.pianalyzer.utils;
+package backend.pianalyzer.pianalyzer.time;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Service;
