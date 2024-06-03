@@ -16,7 +16,7 @@ public class TrafficService {
     public String getHitsByProtocol(String protocol) {
         return trafficRepository.findHitsByProtocol(protocol);
     }
-    public List<TrafficResponse> getProtocolsInfo() {
+    public List<TrafficResponse> getProtocolInfo() {
         List<TrafficResponse> protocols = new ArrayList<>();
         trafficRepository.findAllBy().forEach((protocol) -> {
             var p = TrafficResponse.builder().protocol(protocol.getProtocol()).hits(protocol.getHits()).build();

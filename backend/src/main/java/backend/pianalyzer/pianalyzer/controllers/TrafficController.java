@@ -20,7 +20,7 @@ public class TrafficController {
     }
 
     @GetMapping("/protocol")
-    public ResponseEntity<List<TrafficResponse>> getProtocolsInfo() {
-        return ResponseEntity.ok(trafficService.getProtocolsInfo());
+    public ResponseEntity<List<TrafficResponse>> getProtocolInfo() {
+        return ResponseEntity.ok(trafficService.getProtocolInfo());
     }
 }
