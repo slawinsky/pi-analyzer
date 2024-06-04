@@ -1,6 +1,6 @@
 package backend.pianalyzer.pianalyzer.security.configuration;
 
-import backend.pianalyzer.pianalyzer.domains.user.repository.UserRepository;
+import backend.pianalyzer.pianalyzer.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
