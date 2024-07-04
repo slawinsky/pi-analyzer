@@ -7,6 +7,8 @@ const API_URL = process.env.REACT_APP_BACKEND_URL;
 axios.defaults.baseURL = API_URL;
 axios.defaults.headers["Content-Type"] = "application/json";
 
+export const checkAuthToken = () => {};
+
 export const setAuthToken = (token) => {
   Cookies.set("token", token, { secure: true });
 };
